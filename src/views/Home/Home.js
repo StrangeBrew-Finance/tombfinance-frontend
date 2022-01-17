@@ -146,10 +146,10 @@ const Home = () => {
           <Paper>
             <Box p={4}>
               <h2>Welcome to Brew Finance</h2>
-              <p>The first algorithmic stablecoin on Fantom Opera, pegged to the price of 1 FTM via seigniorage.</p>
+              <p>The first drunken stablecoin on Fantom Opera, pegged to the price of 1 FTM via seigniorage.</p>
               <p>
-                Stake your BEER-FTM LP in the PUB to earn LIQUOR rewards.
-                Then stake your earned LIQUOR in the Backroom to earn more BEER!
+                Stake your TOMB-FTM LP in the Cemetery to earn TSHARE rewards.
+                Then stake your earned TSHARE in the Masonry to earn more TOMB!
               </p>
             </Box>
           </Paper>
@@ -209,7 +209,7 @@ const Home = () => {
         <Grid item xs={12} sm={4}>
           <Card>
             <CardContent align="center" style={{ position: 'relative' }}>
-              <h2>BEER</h2>
+              <h2>TOMB</h2>
               <Button
                 onClick={() => {
                   tombFinance.watchAssetInMetamask('TOMB');
@@ -248,7 +248,7 @@ const Home = () => {
         <Grid item xs={12} sm={4}>
           <Card>
             <CardContent align="center" style={{ position: 'relative' }}>
-              <h2>LIQUOR</h2>
+              <h2>TSHARE</h2>
               <Button
                 onClick={() => {
                   tombFinance.watchAssetInMetamask('TSHARE');
@@ -285,7 +285,7 @@ const Home = () => {
         <Grid item xs={12} sm={4}>
           <Card>
             <CardContent align="center" style={{ position: 'relative' }}>
-              <h2>HANGOVER</h2>
+              <h2>TBOND</h2>
               <Button
                 onClick={() => {
                   tombFinance.watchAssetInMetamask('TBOND');
