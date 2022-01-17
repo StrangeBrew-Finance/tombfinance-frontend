@@ -137,7 +137,7 @@ const Home = () => {
       <BackgroundImage />
       <Grid container spacing={3}>
         {/* Logo */}
-        <Grid container item xs={12} sm={4} justify="center">
+        <Grid container item xs={12} sm={4} justify="bottom">
           {/* <Paper>xs=6 sm=3</Paper> */}
           <Image color="none" style={{ width: '300px', paddingTop: '0px' }} src={CashImage} />
         </Grid>
@@ -183,10 +183,10 @@ const Home = () => {
             <CardContent align="center" style={{ marginTop: '2.5%' }}>
               {/* <h2 style={{ marginBottom: '20px' }}>Wallet Balance</h2> */}
               <Button color="primary" href="/masonry" variant="contained" style={{ marginRight: '10px' }}>
-                Stake Now
+                Stake
               </Button>
               <Button href="/cemetery" variant="contained" style={{ marginRight: '10px' }}>
-                Farm Now
+                Farm
               </Button>
               <Button
                 color="primary"
@@ -208,15 +208,15 @@ const Home = () => {
         {/* TOMB */}
         <Grid item xs={12} sm={4}>
           <Card>
-            <CardContent align="center" style={{ position: 'relative' }}>
-              <h2>TOMB</h2>
+            <CardContent align="right" style={{ position: 'relative' }}>
+              <h2>BEER</h2>
               <Button
                 onClick={() => {
                   tombFinance.watchAssetInMetamask('TOMB');
                 }}
                 color="primary"
                 variant="outlined"
-                style={{ position: 'absolute', top: '10px', right: '10px' }}
+                style={{ position: 'absolute', top: '10px', left: '10px' }}
               >
                 +&nbsp;
                 <img alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} />
@@ -247,15 +247,15 @@ const Home = () => {
         {/* TSHARE */}
         <Grid item xs={12} sm={4}>
           <Card>
-            <CardContent align="center" style={{ position: 'relative' }}>
-              <h2>TSHARE</h2>
+            <CardContent align="right" style={{ position: 'relative' }}>
+              <h2>LIQUOR</h2>
               <Button
                 onClick={() => {
                   tombFinance.watchAssetInMetamask('TSHARE');
                 }}
                 color="primary"
                 variant="outlined"
-                style={{ position: 'absolute', top: '10px', right: '10px' }}
+                style={{ position: 'absolute', top: '10px', left: '10px' }}
               >
                 +&nbsp;
                 <img alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} />
@@ -284,15 +284,15 @@ const Home = () => {
         {/* TBOND */}
         <Grid item xs={12} sm={4}>
           <Card>
-            <CardContent align="center" style={{ position: 'relative' }}>
-              <h2>TBOND</h2>
+            <CardContent align="right" style={{ position: 'relative' }}>
+              <h2>HANGOVER</h2>
               <Button
                 onClick={() => {
                   tombFinance.watchAssetInMetamask('TBOND');
                 }}
                 color="primary"
                 variant="outlined"
-                style={{ position: 'absolute', top: '10px', right: '10px' }}
+                style={{ position: 'absolute', top: '10px', left: '10px' }}
               >
                 +&nbsp;
                 <img alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} />
