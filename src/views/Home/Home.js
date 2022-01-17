@@ -145,8 +145,8 @@ const Home = () => {
         <Grid item xs={12} sm={8}>
           <Paper>
             <Box p={4}>
-              <h2>Welcome to Brew Finance</h2>
-              <p>The first drunken stablecoin on Fantom Opera, pegged to the price of 1 FTM via seigniorage.</p>
+              <h2>Welcome to Tomb Finance</h2>
+              <p>The first algorithmic stablecoin on Fantom Opera, pegged to the price of 1 FTM via seigniorage.</p>
               <p>
                 Stake your TOMB-FTM LP in the Cemetery to earn TSHARE rewards.
                 Then stake your earned TSHARE in the Masonry to earn more TOMB!
