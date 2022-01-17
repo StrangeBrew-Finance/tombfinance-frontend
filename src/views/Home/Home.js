@@ -137,7 +137,7 @@ const Home = () => {
       <BackgroundImage />
       <Grid container spacing={3}>
         {/* Logo */}
-        <Grid container item xs={12} sm={4} justify="center">
+        <Grid container item xs={12} sm={4} justify="bottom">
           {/* <Paper>xs=6 sm=3</Paper> */}
           <Image color="none" style={{ width: '300px', paddingTop: '0px' }} src={CashImage} />
         </Grid>
