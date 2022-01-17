@@ -13,8 +13,8 @@ const newTheme = createMuiTheme({
     },
     primary: {
       light: '#757ce8',
-      main: '#571eb1',
-      dark: '#2c2560',
+      main: '#ff9800',
+      dark: '#774c0e',
       contrastText: '#000',
     },
     secondary: {
@@ -31,7 +31,7 @@ const newTheme = createMuiTheme({
   },
   typography: {
     color: '#2c2560',
-    fontFamily: ['"Poppins"', 'sans-serif'].join(','),
+    fontFamily: ['"Abril+Fatface"', 'serif'].join(','),
   },
 });
 
