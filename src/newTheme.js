@@ -30,8 +30,8 @@ const newTheme = createMuiTheme({
     },
   },
   typography: {
-    color: '#2c2560',
-    fontFamily: ['"Abril+Fatface"', 'serif'].join(','),
+    color: '#000',
+    fontFamily: ['"Abril Fatface"', 'serif'].join(','),
   },
 });
 
