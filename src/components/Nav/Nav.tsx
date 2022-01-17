@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
   },
   toolbarTitle: {
-    fontFamily: '"Amarante", cursive',
+    fontFamily: '"Germania One", fantasy',
     fontSize: '30px',
     flexGrow: 1,
   },
@@ -105,10 +105,10 @@ const Nav = () => {
                 Home
               </Link>
               <Link color="textPrimary" to="/cemetery" className={classes.link}>
-                Cemetery
+                Bar
               </Link>
               <Link color="textPrimary" to="/masonry" className={classes.link}>
-                Masonry
+                Backroom
               </Link>
               <Link color="textPrimary" to="/pit" className={classes.link}>
                 Pit

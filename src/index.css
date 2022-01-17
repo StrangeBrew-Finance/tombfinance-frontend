@@ -5,7 +5,7 @@ h2,
 h3,
 h4 {
   margin: 0;
-  font-family: 'Abril+Fatface', serif !important;
+  font-family: 'Abril Fatface', serif !important;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
@@ -45,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Germania+One', cursive !important;
+  font-family: 'Germania One', cursive !important;
 }
 
 footer .a:hover {
@@ -60,7 +60,7 @@ footer .a:hover {
 .MuiButton-containedPrimary:hover,
 .MuiListItem-button:hover,
 .MuiButtonBase-root:hover {
-  color: #fff !important;
+  color: #000 !important;
 }
 
 code {
@@ -69,7 +69,7 @@ code {
 
 .wallet-button {
   color: #2c2560 !important;
-  font-family: 'Abril+Fatface', serif !important;
+  font-family: 'Abril Fatface', serif !important;
   font-size: 1.1rem !important;
   text-align: left !important;
   justify-content: flex-start !important;
