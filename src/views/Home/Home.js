@@ -208,15 +208,15 @@ const Home = () => {
         {/* TOMB */}
         <Grid item xs={12} sm={4}>
           <Card>
-            <CardContent align="center" style={{ position: 'relative' }}>
-              <h2>TOMB</h2>
+            <CardContent align="right" style={{ position: 'relative' }}>
+              <h2>BEER</h2>
               <Button
                 onClick={() => {
                   tombFinance.watchAssetInMetamask('TOMB');
                 }}
                 color="primary"
                 variant="outlined"
-                style={{ position: 'absolute', top: '10px', right: '10px' }}
+                style={{ position: 'absolute', top: '10px', left: '10px' }}
               >
                 +&nbsp;
                 <img alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} />
@@ -247,15 +247,15 @@ const Home = () => {
         {/* TSHARE */}
         <Grid item xs={12} sm={4}>
           <Card>
-            <CardContent align="center" style={{ position: 'relative' }}>
-              <h2>TSHARE</h2>
+            <CardContent align="right" style={{ position: 'relative' }}>
+              <h2>LIQUOR</h2>
               <Button
                 onClick={() => {
                   tombFinance.watchAssetInMetamask('TSHARE');
                 }}
                 color="primary"
                 variant="outlined"
-                style={{ position: 'absolute', top: '10px', right: '10px' }}
+                style={{ position: 'absolute', top: '10px', left: '10px' }}
               >
                 +&nbsp;
                 <img alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} />
@@ -284,15 +284,15 @@ const Home = () => {
         {/* TBOND */}
         <Grid item xs={12} sm={4}>
           <Card>
-            <CardContent align="center" style={{ position: 'relative' }}>
-              <h2>TBOND</h2>
+            <CardContent align="right" style={{ position: 'relative' }}>
+              <h2>HANGOVER</h2>
               <Button
                 onClick={() => {
                   tombFinance.watchAssetInMetamask('TBOND');
                 }}
                 color="primary"
                 variant="outlined"
-                style={{ position: 'absolute', top: '10px', right: '10px' }}
+                style={{ position: 'absolute', top: '10px', left: '10px' }}
               >
                 +&nbsp;
                 <img alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} />
