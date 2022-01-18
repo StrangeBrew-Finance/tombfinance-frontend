@@ -171,7 +171,7 @@ const Home = () => {
         <Grid item xs={12} sm={4}>
           <Card>
             <CardContent align="center">
-              <h2>Total Value Locked</h2>
+              <h2>TVL</h2>
               <CountUp style={{ fontSize: '25px' }} end={TVL} separator="," prefix="$" />
             </CardContent>
           </Card>
@@ -205,7 +205,7 @@ const Home = () => {
           </Card>
         </Grid>
 
-        {/* TOMB */}
+        {/* BEER */}
         <Grid item xs={12} sm={4}>
           <Card>
             <CardContent align="right" style={{ position: 'relative' }}>
@@ -244,7 +244,7 @@ const Home = () => {
           </Card>
         </Grid>
 
-        {/* TSHARE */}
+        {/* LIQUOR */}
         <Grid item xs={12} sm={4}>
           <Card>
             <CardContent align="right" style={{ position: 'relative' }}>
@@ -320,7 +320,7 @@ const Home = () => {
         <Grid item xs={12} sm={6}>
           <Card>
             <CardContent align="center">
-              <h2>BEER-FTM Spooky LP</h2>
+              <h2>BEER-FTM LP</h2>
               <Box mt={2}>
                 <CardIcon>
                   <TokenSymbol symbol="TOMB-FTM-LP" />
@@ -348,7 +348,7 @@ const Home = () => {
         <Grid item xs={12} sm={6}>
           <Card>
             <CardContent align="center">
-              <h2>LIQUOR-FTM Spooky LP</h2>
+              <h2>LIQUOR-FTM LP</h2>
               <Box mt={2}>
                 <CardIcon>
                   <TokenSymbol symbol="TSHARE-FTM-LP" />
