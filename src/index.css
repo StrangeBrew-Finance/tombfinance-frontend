@@ -21,6 +21,9 @@ body {
 
 .makeStyles-paper-11,
 .makeStyles-paper-11 h2,
+.MuiCardContent-root h2 {
+	font-size: x-large;
+}
 .MuiTypography-body1,
 .MuiPaper-root,
 .MuiPaper-root h2 {
