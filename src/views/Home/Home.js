@@ -150,6 +150,7 @@ const Home = () => {
               <p>
                 Crypto blue chips turned algo stable assets. 
               </p>
+              <p>
                 Stake your BREWCASH-MIM LP in the Bar to earn LIQUOR rewards.
                 Stake your BEER-FTM LP in the Bar to earn LIQUOR rewards.
                 Stake your NATTYLITE-WETH LP in the Bar to earn LIQUOR rewards.
