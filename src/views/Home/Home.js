@@ -146,10 +146,17 @@ const Home = () => {
           <Paper>
             <Box p={4}>
               <h2>Welcome to Brew Finance</h2>
-              <p>The 28th algorithmic stablecoin on Fantom Opera, pegged to the price of 1 FTM via seigniorage.</p>
+              <p>A new class of synthetic assets built on the TOMB model.</p>
               <p>
-                Stake your BEER-FTM LP in the Cemetery to earn LIQUOR rewards.
-                Then stake your earned LIQUOR in the PUB to earn more BEER!
+                Crypto blue chips turned algo stable assets. 
+
+                Stake your BREWCASH-MIM LP in the Bar to earn LIQUOR rewards.
+                Stake your BEER-FTM LP in the Bar to earn LIQUOR rewards.
+                Stake your NATTYLITE-WETH LP in the Bar to earn LIQUOR rewards.
+                Stake your MACALLAN25-WBTC LP in the Bar to earn LIQUOR rewards.
+                Then stake your earned LIQUOR in the PUB to earn more BREWCASH!
+                When below peg, purchase HAIR OF THE DOG!
+
               </p>
             </Box>
           </Paper>
@@ -162,7 +169,7 @@ const Home = () => {
     <Grid item  xs={12} sm={12} justify="center"  style={{ margin: '12px', display: 'flex' }}>
             <Alert variant="filled" severity="warning">
               <b>
-      Please visit our <StyledLink target="_blank" href="https://docs.tomb.finance">documentation</StyledLink> before purchasing BEER or LIQUOR!</b>
+      Please visit our <StyledLink target="_blank" href="https://docs.tomb.finance">documentation</StyledLink> before purchasing any of these assets!</b>
             </Alert>
         </Grid>
         </Grid>
@@ -209,6 +216,44 @@ const Home = () => {
         <Grid item xs={12} sm={4}>
           <Card>
             <CardContent align="right" style={{ position: 'relative' }}>
+              <h2>BREWCASH</h2>
+              <Button
+                onClick={() => {
+                  tombFinance.watchAssetInMetamask('TOMB');
+                }}
+                color="primary"
+                variant="outlined"
+                style={{ position: 'absolute', top: '10px', left: '10px' }}
+              >
+                +&nbsp;
+                <img alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} />
+              </Button>
+              <Box mt={2}>
+                <CardIcon>
+                  <TokenSymbol symbol="TOMB" />
+                </CardIcon>
+              </Box>
+              Current Price
+              <Box>
+                <span style={{ fontSize: '30px' }}>{tombPriceInFTM ? tombPriceInFTM : '-.----'} FTM</span>
+              </Box>
+              <Box>
+                <span style={{ fontSize: '16px', alignContent: 'flex-start' }}>
+                  ${tombPriceInDollars ? tombPriceInDollars : '-.--'}
+                </span>
+              </Box>
+              <span style={{ fontSize: '12px' }}>
+                Market Cap: ${(tombCirculatingSupply * tombPriceInDollars).toFixed(2)} <br />
+                Circulating Supply: {tombCirculatingSupply} <br />
+                Total Supply: {tombTotalSupply}
+              </span>
+            </CardContent>
+          </Card>
+        </Grid>
+ {/* BEER */}
+ <Grid item xs={12} sm={4}>
+          <Card>
+            <CardContent align="right" style={{ position: 'relative' }}>
               <h2>BEER</h2>
               <Button
                 onClick={() => {
@@ -243,7 +288,82 @@ const Home = () => {
             </CardContent>
           </Card>
         </Grid>
-
+{/* BEER */}
+<Grid item xs={12} sm={4}>
+          <Card>
+            <CardContent align="right" style={{ position: 'relative' }}>
+              <h2>NATTYLITE</h2>
+              <Button
+                onClick={() => {
+                  tombFinance.watchAssetInMetamask('TOMB');
+                }}
+                color="primary"
+                variant="outlined"
+                style={{ position: 'absolute', top: '10px', left: '10px' }}
+              >
+                +&nbsp;
+                <img alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} />
+              </Button>
+              <Box mt={2}>
+                <CardIcon>
+                  <TokenSymbol symbol="TOMB" />
+                </CardIcon>
+              </Box>
+              Current Price
+              <Box>
+                <span style={{ fontSize: '30px' }}>{tombPriceInFTM ? tombPriceInFTM : '-.----'} FTM</span>
+              </Box>
+              <Box>
+                <span style={{ fontSize: '16px', alignContent: 'flex-start' }}>
+                  ${tombPriceInDollars ? tombPriceInDollars : '-.--'}
+                </span>
+              </Box>
+              <span style={{ fontSize: '12px' }}>
+                Market Cap: ${(tombCirculatingSupply * tombPriceInDollars).toFixed(2)} <br />
+                Circulating Supply: {tombCirculatingSupply} <br />
+                Total Supply: {tombTotalSupply}
+              </span>
+            </CardContent>
+          </Card>
+        </Grid>
+{/* BEER */}
+<Grid item xs={12} sm={4}>
+          <Card>
+            <CardContent align="right" style={{ position: 'relative' }}>
+              <h2>MACALLAN25</h2>
+              <Button
+                onClick={() => {
+                  tombFinance.watchAssetInMetamask('TOMB');
+                }}
+                color="primary"
+                variant="outlined"
+                style={{ position: 'absolute', top: '10px', left: '10px' }}
+              >
+                +&nbsp;
+                <img alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} />
+              </Button>
+              <Box mt={2}>
+                <CardIcon>
+                  <TokenSymbol symbol="TOMB" />
+                </CardIcon>
+              </Box>
+              Current Price
+              <Box>
+                <span style={{ fontSize: '30px' }}>{tombPriceInFTM ? tombPriceInFTM : '-.----'} FTM</span>
+              </Box>
+              <Box>
+                <span style={{ fontSize: '16px', alignContent: 'flex-start' }}>
+                  ${tombPriceInDollars ? tombPriceInDollars : '-.--'}
+                </span>
+              </Box>
+              <span style={{ fontSize: '12px' }}>
+                Market Cap: ${(tombCirculatingSupply * tombPriceInDollars).toFixed(2)} <br />
+                Circulating Supply: {tombCirculatingSupply} <br />
+                Total Supply: {tombTotalSupply}
+              </span>
+            </CardContent>
+          </Card>
+        </Grid>
         {/* LIQUOR */}
         <Grid item xs={12} sm={4}>
           <Card>
