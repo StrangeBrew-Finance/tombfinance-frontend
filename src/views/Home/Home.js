@@ -149,7 +149,7 @@ const Home = () => {
               <p>A new class of synthetic assets built on the TOMB model.</p>
               <p>
                 Crypto blue chips turned algo stable assets. 
-
+              </p>
                 Stake your BREWCASH-MIM LP in the Bar to earn LIQUOR rewards.
                 Stake your BEER-FTM LP in the Bar to earn LIQUOR rewards.
                 Stake your NATTYLITE-WETH LP in the Bar to earn LIQUOR rewards.
@@ -207,6 +207,15 @@ const Home = () => {
               </Button>
               <Button variant="contained" target="_blank" href={buyTShareAddress} className={classes.button}>
                 Buy LIQUOR
+              </Button>
+              <Button variant="contained" target="_blank" href={buyTShareAddress} className={classes.button}>
+                Buy BREWCASH
+              </Button>
+              <Button variant="contained" target="_blank" href={buyTShareAddress} className={classes.button}>
+                Buy NATTYLITE
+              </Button>
+              <Button variant="contained" target="_blank" href={buyTShareAddress} className={classes.button}>
+                Buy MACALLAN25
               </Button>
             </CardContent>
           </Card>
