@@ -146,10 +146,25 @@ const Home = () => {
           <Paper>
             <Box p={4}>
               <h2>Welcome to Brew Finance</h2>
+<<<<<<< HEAD
               <p>Inebriated Algo madness!</p>
               <p>
                 Stake your BEER-FTM LP in the Cemetery to earn LIQUOR rewards.
                 Then stake your earned TSHARE in the Masonry to earn more TOMB!
+=======
+              <p>A new class of synthetic assets built on the TOMB model.</p>
+              <p>
+                Crypto blue chips turned algo stable assets. 
+              </p>
+              <p>
+                Stake your BREWCASH-MIM LP in the Bar to earn LIQUOR rewards.
+                Stake your BEER-FTM LP in the Bar to earn LIQUOR rewards.
+                Stake your NATTYLITE-WETH LP in the Bar to earn LIQUOR rewards.
+                Stake your MACALLAN25-WBTC LP in the Bar to earn LIQUOR rewards.
+                Then stake your earned LIQUOR in the PUB to earn more BREWCASH!
+                When below peg, purchase HAIR OF THE DOG!
+
+>>>>>>> cd2497a04e966dd1850fbe700a7ab5f5ce8b93f6
               </p>
             </Box>
           </Paper>
@@ -162,7 +177,11 @@ const Home = () => {
     <Grid item  xs={12} sm={12} justify="center"  style={{ margin: '12px', display: 'flex' }}>
             <Alert variant="filled" severity="warning">
               <b>
+<<<<<<< HEAD
       Please visit our <StyledLink target="_blank" href="https://docs.tomb.finance">documentation</StyledLink> before purchasing BEER or LIQUOR!</b>
+=======
+      Please visit our <StyledLink target="_blank" href="https://docs.tomb.finance">documentation</StyledLink> before purchasing any of these assets!</b>
+>>>>>>> cd2497a04e966dd1850fbe700a7ab5f5ce8b93f6
             </Alert>
         </Grid>
         </Grid>
@@ -171,7 +190,7 @@ const Home = () => {
         <Grid item xs={12} sm={4}>
           <Card>
             <CardContent align="center">
-              <h2>Total Value Locked</h2>
+              <h2>TVL</h2>
               <CountUp style={{ fontSize: '25px' }} end={TVL} separator="," prefix="$" />
             </CardContent>
           </Card>
@@ -197,26 +216,46 @@ const Home = () => {
                 className={classes.button}
               >
                 Buy BEER
+<<<<<<< HEAD
               </Button>
               <Button variant="contained" target="_blank" href={buyTShareAddress} className={classes.button}>
                 Buy LIQUOR
+=======
+              </Button>
+              <Button variant="contained" target="_blank" href={buyTShareAddress} className={classes.button}>
+                Buy LIQUOR
+              </Button>
+              <Button variant="contained" target="_blank" href={buyTShareAddress} className={classes.button}>
+                Buy BREWCASH
+              </Button>
+              <Button variant="contained" target="_blank" href={buyTShareAddress} className={classes.button}>
+                Buy NATTYLITE
+              </Button>
+              <Button variant="contained" target="_blank" href={buyTShareAddress} className={classes.button}>
+                Buy MACALLAN25
+>>>>>>> cd2497a04e966dd1850fbe700a7ab5f5ce8b93f6
               </Button>
             </CardContent>
           </Card>
         </Grid>
 
-        {/* TOMB */}
+        {/* BEER */}
         <Grid item xs={12} sm={4}>
           <Card>
+<<<<<<< HEAD
             <CardContent align="center" style={{ position: 'relative' }}>
               <h2>BEER</h2>
+=======
+            <CardContent align="right" style={{ position: 'relative' }}>
+              <h2>BREWCASH</h2>
+>>>>>>> cd2497a04e966dd1850fbe700a7ab5f5ce8b93f6
               <Button
                 onClick={() => {
                   tombFinance.watchAssetInMetamask('TOMB');
                 }}
                 color="primary"
                 variant="outlined"
-                style={{ position: 'absolute', top: '10px', right: '10px' }}
+                style={{ position: 'absolute', top: '10px', left: '10px' }}
               >
                 +&nbsp;
                 <img alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} />
@@ -243,11 +282,128 @@ const Home = () => {
             </CardContent>
           </Card>
         </Grid>
-
-        {/* TSHARE */}
+ {/* BEER */}
+ <Grid item xs={12} sm={4}>
+          <Card>
+            <CardContent align="right" style={{ position: 'relative' }}>
+              <h2>BEER</h2>
+              <Button
+                onClick={() => {
+                  tombFinance.watchAssetInMetamask('TOMB');
+                }}
+                color="primary"
+                variant="outlined"
+                style={{ position: 'absolute', top: '10px', left: '10px' }}
+              >
+                +&nbsp;
+                <img alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} />
+              </Button>
+              <Box mt={2}>
+                <CardIcon>
+                  <TokenSymbol symbol="TOMB" />
+                </CardIcon>
+              </Box>
+              Current Price
+              <Box>
+                <span style={{ fontSize: '30px' }}>{tombPriceInFTM ? tombPriceInFTM : '-.----'} FTM</span>
+              </Box>
+              <Box>
+                <span style={{ fontSize: '16px', alignContent: 'flex-start' }}>
+                  ${tombPriceInDollars ? tombPriceInDollars : '-.--'}
+                </span>
+              </Box>
+              <span style={{ fontSize: '12px' }}>
+                Market Cap: ${(tombCirculatingSupply * tombPriceInDollars).toFixed(2)} <br />
+                Circulating Supply: {tombCirculatingSupply} <br />
+                Total Supply: {tombTotalSupply}
+              </span>
+            </CardContent>
+          </Card>
+        </Grid>
+{/* BEER */}
+<Grid item xs={12} sm={4}>
+          <Card>
+            <CardContent align="right" style={{ position: 'relative' }}>
+              <h2>NATTYLITE</h2>
+              <Button
+                onClick={() => {
+                  tombFinance.watchAssetInMetamask('TOMB');
+                }}
+                color="primary"
+                variant="outlined"
+                style={{ position: 'absolute', top: '10px', left: '10px' }}
+              >
+                +&nbsp;
+                <img alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} />
+              </Button>
+              <Box mt={2}>
+                <CardIcon>
+                  <TokenSymbol symbol="TOMB" />
+                </CardIcon>
+              </Box>
+              Current Price
+              <Box>
+                <span style={{ fontSize: '30px' }}>{tombPriceInFTM ? tombPriceInFTM : '-.----'} FTM</span>
+              </Box>
+              <Box>
+                <span style={{ fontSize: '16px', alignContent: 'flex-start' }}>
+                  ${tombPriceInDollars ? tombPriceInDollars : '-.--'}
+                </span>
+              </Box>
+              <span style={{ fontSize: '12px' }}>
+                Market Cap: ${(tombCirculatingSupply * tombPriceInDollars).toFixed(2)} <br />
+                Circulating Supply: {tombCirculatingSupply} <br />
+                Total Supply: {tombTotalSupply}
+              </span>
+            </CardContent>
+          </Card>
+        </Grid>
+{/* BEER */}
+<Grid item xs={12} sm={4}>
+          <Card>
+            <CardContent align="right" style={{ position: 'relative' }}>
+              <h2>MACALLAN25</h2>
+              <Button
+                onClick={() => {
+                  tombFinance.watchAssetInMetamask('TOMB');
+                }}
+                color="primary"
+                variant="outlined"
+                style={{ position: 'absolute', top: '10px', left: '10px' }}
+              >
+                +&nbsp;
+                <img alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} />
+              </Button>
+              <Box mt={2}>
+                <CardIcon>
+                  <TokenSymbol symbol="TOMB" />
+                </CardIcon>
+              </Box>
+              Current Price
+              <Box>
+                <span style={{ fontSize: '30px' }}>{tombPriceInFTM ? tombPriceInFTM : '-.----'} FTM</span>
+              </Box>
+              <Box>
+                <span style={{ fontSize: '16px', alignContent: 'flex-start' }}>
+                  ${tombPriceInDollars ? tombPriceInDollars : '-.--'}
+                </span>
+              </Box>
+              <span style={{ fontSize: '12px' }}>
+                Market Cap: ${(tombCirculatingSupply * tombPriceInDollars).toFixed(2)} <br />
+                Circulating Supply: {tombCirculatingSupply} <br />
+                Total Supply: {tombTotalSupply}
+              </span>
+            </CardContent>
+          </Card>
+        </Grid>
+        {/* LIQUOR */}
         <Grid item xs={12} sm={4}>
           <Card>
+<<<<<<< HEAD
             <CardContent align="center" style={{ position: 'relative' }}>
+=======
+            <CardContent align="right" style={{ position: 'relative' }}>
+>>>>>>> cd2497a04e966dd1850fbe700a7ab5f5ce8b93f6
               <h2>LIQUOR</h2>
               <Button
                 onClick={() => {
@@ -255,7 +411,7 @@ const Home = () => {
                 }}
                 color="primary"
                 variant="outlined"
-                style={{ position: 'absolute', top: '10px', right: '10px' }}
+                style={{ position: 'absolute', top: '10px', left: '10px' }}
               >
                 +&nbsp;
                 <img alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} />
@@ -284,15 +440,20 @@ const Home = () => {
         {/* TBOND */}
         <Grid item xs={12} sm={4}>
           <Card>
+<<<<<<< HEAD
             <CardContent align="center" style={{ position: 'relative' }}>
               <h2>Hair of the Dog</h2>
+=======
+            <CardContent align="right" style={{ position: 'relative' }}>
+              <h2>HANGOVER</h2>
+>>>>>>> cd2497a04e966dd1850fbe700a7ab5f5ce8b93f6
               <Button
                 onClick={() => {
                   tombFinance.watchAssetInMetamask('TBOND');
                 }}
                 color="primary"
                 variant="outlined"
-                style={{ position: 'absolute', top: '10px', right: '10px' }}
+                style={{ position: 'absolute', top: '10px', left: '10px' }}
               >
                 +&nbsp;
                 <img alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} />
@@ -320,7 +481,11 @@ const Home = () => {
         <Grid item xs={12} sm={6}>
           <Card>
             <CardContent align="center">
+<<<<<<< HEAD
               <h2>BEER-FTM Spooky LP</h2>
+=======
+              <h2>BEER-FTM LP</h2>
+>>>>>>> cd2497a04e966dd1850fbe700a7ab5f5ce8b93f6
               <Box mt={2}>
                 <CardIcon>
                   <TokenSymbol symbol="TOMB-FTM-LP" />
@@ -348,7 +513,11 @@ const Home = () => {
         <Grid item xs={12} sm={6}>
           <Card>
             <CardContent align="center">
+<<<<<<< HEAD
               <h2>LIQUOR-FTM Spooky LP</h2>
+=======
+              <h2>LIQUOR-FTM LP</h2>
+>>>>>>> cd2497a04e966dd1850fbe700a7ab5f5ce8b93f6
               <Box mt={2}>
                 <CardIcon>
                   <TokenSymbol symbol="TSHARE-FTM-LP" />
