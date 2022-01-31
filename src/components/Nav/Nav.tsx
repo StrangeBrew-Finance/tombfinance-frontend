@@ -111,20 +111,8 @@ const Nav = () => {
                 Backroom
               </Link>
               <Link color="textPrimary" to="/pit" className={classes.link}>
-                Pit
+                Hangover
               </Link>
-              <Link color="textPrimary" to="/sbs" className={classes.link}>
-                SBS
-              </Link>
-              <Link color="textPrimary" to="/liquidity" className={classes.link}>
-                Liquidity
-              </Link>
-              <Link color="textPrimary" to="/regulations" className={classes.link}>
-                Regulations
-              </Link>
-              <a href="https://docs.tomb.finance" className={classes.link}>
-                Docs
-              </a>
             </Box>
             <AccountButton text="Connect" />
           </>
@@ -162,13 +150,9 @@ const Nav = () => {
               <Divider />
               <List>
                 <ListItemLink primary="Home" to="/" />
-                <ListItemLink primary="Cemetery" to="/cemetery" />
-                <ListItemLink primary="Masonry" to="/masonry" />
-                <ListItemLink primary="Pit" to="/pit" />
-                <ListItemLink primary="SBS" to="/sbs" />
-                <ListItemLink primary="Liquidity" to="/liquidity" />
-                <ListItemLink primary="Regulations" to="/regulations" />
-                <ListItem button component="a" href="https://docs.tomb.finance">
+                <ListItemLink primary="Bar" to="/cemetery" />
+                <ListItemLink primary="Backroom" to="/masonry" />
+                <ListItemLink primary="Hangover" to="/pit" />
                   <ListItemText>Docs</ListItemText>
                 </ListItem>
                 <ListItem style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
