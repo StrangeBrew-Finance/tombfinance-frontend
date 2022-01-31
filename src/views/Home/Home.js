@@ -146,12 +146,10 @@ const Home = () => {
           <Paper>
             <Box p={4}>
               <h2>Welcome to Brew Finance</h2>
-<<<<<<< HEAD
               <p>Inebriated Algo madness!</p>
               <p>
                 Stake your BEER-FTM LP in the Cemetery to earn LIQUOR rewards.
                 Then stake your earned TSHARE in the Masonry to earn more TOMB!
-=======
               <p>A new class of synthetic assets built on the TOMB model.</p>
               <p>
                 Crypto blue chips turned algo stable assets. 
@@ -164,7 +162,6 @@ const Home = () => {
                 Then stake your earned LIQUOR in the PUB to earn more BREWCASH!
                 When below peg, purchase HAIR OF THE DOG!
 
->>>>>>> cd2497a04e966dd1850fbe700a7ab5f5ce8b93f6
               </p>
             </Box>
           </Paper>
